@@ -18,7 +18,6 @@ import time
 import os
 
 #Ahora definimos Todos los pines del 2-11 como salida
-GPIO.setup(1, GPIO.OUT)
 GPIO.setup(2, GPIO.OUT)
 GPIO.setup(3, GPIO.OUT)
 GPIO.setup(4, GPIO.OUT)
@@ -51,7 +50,6 @@ def importarGPIO():
 	import time
 
 	#Ahora definimos Todos los pines del 2-11 como salida
-	GPIO.setup(1, GPIO.OUT)
 	GPIO.setup(2, GPIO.OUT)
 	GPIO.setup(3, GPIO.OUT)
 	GPIO.setup(4, GPIO.OUT)
@@ -256,12 +254,11 @@ def lucesfijas():
 
 # -------------------------------------- SELECCIONAR LED A ENCENDER ----------------------------------
 def seleccionargpioaencender():
-
+	GPIO.cleanup()
 	#os.system("espeak -ves 'Introduce el número de LED'")
 	limpiarled()
 
 	while True:
-		importarGPIO()
 		print """
 			Escribe el número de GPIO según BCM que quieras encender
 					Recuerda que solo funcionan valores desde el 2 al 27
