@@ -256,6 +256,7 @@ def lucesfijas():
 def seleccionargpioaencender():
 	importarGPIO()
 	GPIO.cleanup()
+	GPIO.setmode(GPIO.BCM)
 	#os.system("espeak -ves 'Introduce el número de LED'")
 
 	while True:
