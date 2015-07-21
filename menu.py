@@ -268,7 +268,7 @@ Número elegido:
 		seleccionGPIO=input("-->")
 		if seleccionGPIO >= 1 | seleccionGPIO <= 27:
 			GPIO.output(seleccionGPIO, GPIO.HIGH)
-			print "El GPIO" seleccionGPIO "se ha activado a 3,3V"
+			print "El GPIO" + seleccionGPIO + "se ha activado a 3,3V"
 
 		else:
 			print "Esta opción es incorrecta, selecciona un número del 2 al 27"
