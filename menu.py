@@ -268,8 +268,6 @@ def seleccionargpioaencender():
 		"""
 	seleccionGPIO=raw_input("-->")
 	print seleccionGPIO
-	type seleccionGPIO
-
 
 	"""
 	nombreled = seleccionGPIO + ", GPIO.HIGH"
