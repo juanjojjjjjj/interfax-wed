@@ -280,6 +280,7 @@ def seleccionargpioaencender():
 			GPIO.output(5, GPIO.HIGH)
 
 		elif seleccionGPIO == 6:
+			print "prueba de que llega hasta aquí"
 			GPIO.output(6, GPIO.HIGH)
 
 		elif seleccionGPIO == 7:
