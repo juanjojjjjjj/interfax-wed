@@ -254,6 +254,7 @@ def lucesfijas():
 	GPIO.output(10, GPIO.HIGH)
 	GPIO.output(11, GPIO.HIGH)
 
+# -------------------------------------- SELECCIONAR LED A ENCENDER ----------------------------------
 def seleccionargpioaencender():
 	importarGPIO()
 	os.system("espeak -ves 'Introduce el número de LED'")
@@ -274,9 +275,11 @@ Número elegido:
 			print "Esta opción es incorrecta, selecciona un número del 2 al 27"
 
 # ---------------------------------------CONTROL DE ENTRADA PARA EL MENÚ-----------------------------
-
 while True:
 	print """
+Este menú controla principalmente los pines GPIO del 2 al 11 según BCM
+Recuerda que la tensión de salida es de 3,3V
+
 Elige una opción:
 
 1 Para encender todos los LED
@@ -295,6 +298,12 @@ Elige una opción:
 
 	elif opcion == 3:
 		lucesaleatorias_b()
+
+	elif opcion == 4:
+		seleccionargpioaencender()
+
+	elif opcion == 5:
+		seleccionargpioaapagar()
 
 	elif opcion == 6:
 		print("nos vemos")
