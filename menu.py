@@ -260,21 +260,54 @@ def seleccionargpioaencender():
 	#os.system("espeak -ves 'Introduce el número de LED'")
 	limpiarled()
 
-	print """
-		Escribe el número de GPIO según BCM que quieras encender
-				Recuerda que solo funcionan valores desde el 2 al 27
+	while True:
+		print """
+			Escribe el número de GPIO según BCM que quieras encender
+					Recuerda que solo funcionan valores desde el 2 al 27
 
-		Número elegido:
+			Número elegido:
+			"""
+		seleccionGPIO=input("-->")
+
+		if seleccionGPIO == 2:
+			GPIO.output(2, GPIO.HIGH)
+
+		elif seleccionGPIO == 3:
+			GPIO.output(3, GPIO.HIGH)
+
+		elif seleccionGPIO == 4:
+			GPIO.output(4, GPIO.HIGH)
+
+		elif seleccionGPIO == 5:
+			GPIO.output(5, GPIO.HIGH)
+
+		elif seleccionGPIO == 6:
+			GPIO.output(6, GPIO.HIGH)
+
+		elif seleccionGPIO == 7:
+			GPIO.output(7, GPIO.HIGH)
+
+		elif seleccionGPIO == 8:
+			GPIO.output(8, GPIO.HIGH)
+
+		elif seleccionGPIO == 9:
+			GPIO.output(9, GPIO.HIGH)
+
+		elif seleccionGPIO == 10:
+			GPIO.output(10, GPIO.HIGH)
+
+		elif seleccionGPIO == 11:
+			GPIO.output(11, GPIO.HIGH)
+
+		else:
+			print "Esta opción es incorrecta, selecciona un número del 1 al 6"
+
 		"""
-	seleccionGPIO=raw_input("-->")
-	print seleccionGPIO
+		nombreled = seleccionGPIO + ", GPIO.HIGH"
 
-	"""
-	nombreled = seleccionGPIO + ", GPIO.HIGH"
-
-	GPIO.output(nombreled)
-	print "El GPIO" + nombreled + "se ha activado a 3,3V"
-	"""
+		GPIO.output(nombreled)
+		print "El GPIO" + nombreled + "se ha activado a 3,3V"
+		"""
 
 # ---------------------------------------CONTROL DE ENTRADA PARA EL MENÚ-----------------------------
 while True:
@@ -291,6 +324,7 @@ Elige una opción:
 5 Seleccionar GPIO para apagar
 6 Desactivar todos los LED
 """
+
 	opcion=input("-->")
 	if opcion == 1:
 		lucesfijas()
