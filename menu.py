@@ -254,9 +254,9 @@ def lucesfijas():
 
 # -------------------------------------- SELECCIONAR LED A ENCENDER ----------------------------------
 def seleccionargpioaencender():
+	importarGPIO()
 	GPIO.cleanup()
 	#os.system("espeak -ves 'Introduce el número de LED'")
-	limpiarled()
 
 	while True:
 		print """
@@ -280,8 +280,6 @@ def seleccionargpioaencender():
 			GPIO.output(5, GPIO.HIGH)
 
 		elif seleccionGPIO == 6:
-			importarGPIO()
-			GPIO.cleanup()
 			GPIO.output(6, GPIO.HIGH)
 
 		elif seleccionGPIO == 7:
