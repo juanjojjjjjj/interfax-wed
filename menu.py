@@ -266,7 +266,7 @@ Escribe el número de GPIO según BCM que quieras encender
 Número elegido:
 """
 		seleccionGPIO=input("-->")
-		if seleccionGPIO => 1 | seleccionGPIO =< 27:
+		if seleccionGPIO >= 1 | seleccionGPIO <= 27:
 			GPIO.output(seleccionGPIO, GPIO.HIGH)
 			print "El GPIO" seleccionGPIO "se ha activado a 3,3V"
 
