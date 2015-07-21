@@ -256,11 +256,12 @@ def lucesfijas():
 
 # -------------------------------------- SELECCIONAR LED A ENCENDER ----------------------------------
 def seleccionargpioaencender():
-	importarGPIO()
+
 	#os.system("espeak -ves 'Introduce el número de LED'")
 	limpiarled()
 
 	while True:
+		importarGPIO()
 		print """
 			Escribe el número de GPIO según BCM que quieras encender
 					Recuerda que solo funcionan valores desde el 2 al 27
