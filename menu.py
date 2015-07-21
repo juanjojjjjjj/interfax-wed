@@ -281,6 +281,7 @@ def seleccionargpioaencender():
 
 		elif seleccionGPIO == 6:
 			importarGPIO()
+			GPIO.cleanup()
 			GPIO.output(6, GPIO.HIGH)
 
 		elif seleccionGPIO == 7:
