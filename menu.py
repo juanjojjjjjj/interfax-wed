@@ -268,8 +268,10 @@ def seleccionargpioaencender():
 		"""
 	seleccionGPIO=input("-->")
 
-	GPIO.output(seleccionGPIO, GPIO.HIGH)
-	print "El GPIO" + seleccionGPIO + "se ha activado a 3,3V"
+	nombreled = selccionGPIO + ", GPIO.HIGH"
+
+	GPIO.output(nombreled)
+	print "El GPIO" + nombreled + "se ha activado a 3,3V"
 
 
 # ---------------------------------------CONTROL DE ENTRADA PARA EL MENÚ-----------------------------
