@@ -4,3 +4,39 @@
 		<TITLE>Raspberry PI WEB controlador GPIO</TITLE>
 		<META CHARSET="utf-8"/>
 	</HEAD>
+	
+	<BODY>
+<!--ACCIONES PARA GPIO2-->
+		<FORM action="" method="post">
+			GPIO 2 <INPUT type="submit" name="Activar2" value="Activar"/>
+			<INPUT type="submit" name="Desactivar2" value="Desactivar"/>
+			<INPUT type="submit" name="1parpadeo2" value="1Parpadeo"/>
+			<INPUT type="submit" name="Parpadear2" value="Parpadear"/>
+		</FORM>
+	</BODY>
+</HTML>
+			
+
+<?php
+
+// Funciones PHP del pin GPIO 2
+	if ($_POST[Activar2]) { 
+		$a- exec("sudo python /var/www/GPIO/2/activar.py");
+		echo $a;
+	}
+
+	if ($_POST[Desacticar2]) { 
+		$a- exec("sudo python /var/www/GPIO/2/apagar.py");
+		echo $a;
+	}
+
+	if ($_POST[1parpadeo2]) { 
+		$a- exec("sudo python /var/www/GPIO/2/1parpadeo.py");
+		echo $a;
+	}
+
+	if ($_POST[1parpadeo2]) { 
+		$a- exec("sudo python /var/www/GPIO/2/parpadear.py");
+		echo $a;
+	}
+// Fin de las funciónes del pin GPIO 2
