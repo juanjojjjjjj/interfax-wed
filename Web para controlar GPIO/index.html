@@ -25,18 +25,18 @@
 		echo $a;
 	}
 
-	if ($_POST[Desacticar2]) { 
+	if ($_POST[Desacticar4]) { 
 		exec("sudo python /var/www/Web para controlar GPIO/GPIO/4/apagar.py");
 		echo $a;
 	}
 
-	if ($_POST[1parpadeo2]) { 
+	if ($_POST[1parpadeo4]) { 
 		exec("sudo python /var/www/Web para controlar GPIO/GPIO/4/1parpadeo.py");
 		echo $a;
 	}
 
-	if ($_POST[Parpadear2]) { 
-		exec("sudo python /var/www/Web para controlar GPIO/GPIO/4/parpadear.py");
+	if ($_POST[Parpadear4]) { 
+		exec("sudo python /var/www/Web\ para\ controlar\ GPIO/GPIO/4/parpadear.py");
 		echo $a;
 	}
 // Fin de las funciónes del pin GPIO 4
