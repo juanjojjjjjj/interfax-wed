@@ -16,6 +16,9 @@ import time
 #Importamos la libreria para comandos de la consola/shell
 import os
 
+#Creamos variable para pausar
+sleep = time.sleep
+
 #Definir GPIO como Salida
 GPIO.setup(1, GPIO.OUT)
 
