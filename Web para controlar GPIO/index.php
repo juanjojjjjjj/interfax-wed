@@ -11,7 +11,7 @@
 		echo $a;
 	}
 
-	if ($_POST[Desacticar4]) { 
+	if ($_POST[Desactivar4]) { 
 		$a=exec("sudo python /var/www/Web\ para\ controlar\ GPIO/GPIO/4/apagar.py");
 		echo $a;
 	}
