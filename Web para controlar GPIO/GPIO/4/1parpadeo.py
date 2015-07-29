@@ -28,5 +28,8 @@ sleep(1)
 #Detener salida
 GPIO.output(4, GPIO.LOW)
 
+#Pausar 1 segundo
+sleep(1)
+
 #Limpiar GPIO
 GPIO.cleanup()
