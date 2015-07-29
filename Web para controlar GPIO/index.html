@@ -21,22 +21,22 @@
 
 // Funciones PHP del pin GPIO 2
 	if ($_POST[Activar2]) { 
-		$a- exec("sudo python /var/www/GPIO/2/activar.py");
+		exec("sudo python /var/www/GPIO/2/activar.py");
 		echo $a;
 	}
 
 	if ($_POST[Desacticar2]) { 
-		$a- exec("sudo python /var/www/GPIO/2/apagar.py");
+		exec("sudo python /var/www/GPIO/2/apagar.py");
 		echo $a;
 	}
 
 	if ($_POST[1parpadeo2]) { 
-		$a- exec("sudo python /var/www/GPIO/2/1parpadeo.py");
+		exec("sudo python /var/www/GPIO/2/1parpadeo.py");
 		echo $a;
 	}
 
 	if ($_POST[Parpadear2]) { 
-		$a- exec("sudo python /var/www/GPIO/2/parpadear.py");
+		exec("sudo python /var/www/GPIO/2/parpadear.py");
 		echo $a;
 	}
 // Fin de las funciónes del pin GPIO 2
