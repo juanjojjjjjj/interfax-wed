@@ -16,13 +16,13 @@
 		echo $a;
 	}
 
-	if ($_POST[1parpadeo4]) { 
+	if ($_POST[UNparpadeo4]) { 
 		exec("sudo python /var/www/Web para controlar GPIO/GPIO/4/1parpadeo.py");
 		echo $a;
 	}
 
 	if ($_POST[Parpadear4]) { 
-		$a- exec("sudo python /var/www/Web\ para\ controlar\ GPIO/GPIO/4/parpadear.py");
+		$a=exec("sudo python /var/www/Web\ para\ controlar\ GPIO/GPIO/4/parpadear.py");
 		echo $a;
 	}
 // Fin de las funciónes del pin GPIO 4
@@ -34,7 +34,7 @@
 		<FORM action="" method="post">
 			GPIO 4 <INPUT type="submit" name="Activar4" value="Activar"/>
 			<INPUT type="submit" name="Desactivar4" value="Desactivar"/>
-			<INPUT type="submit" name="1parpadeo4" value="1Parpadeo"/>
+			<INPUT type="submit" name="UNparpadeo4" value="1Parpadeo"/>
 			<INPUT type="submit" name="Parpadear4" value="Parpadear"/>
 		</FORM>
 	</BODY>
