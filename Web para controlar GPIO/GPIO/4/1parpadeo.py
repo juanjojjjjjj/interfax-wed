@@ -17,16 +17,16 @@ import time
 import os
 
 #Definir GPIO como Salida
-GPIO.setup(1, GPIO.OUT)
+GPIO.setup(4, GPIO.OUT)
 
 #Asigno valor alto para que tenga corriente la salida de 3,3v por GPIO
-GPIO.output(1, GPIO.HIGH)
+GPIO.output(4, GPIO.HIGH)
 
 #Pausar 1 segundo
 sleep(1)
 
 #Detener salida
-GPIO.output(1, GPIO.LOW)
+GPIO.output(4, GPIO.LOW)
 
 #Limpiar GPIO
 GPIO.cleanup()
